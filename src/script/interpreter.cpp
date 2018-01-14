@@ -170,6 +170,13 @@ bool static IsValidSignatureEncoding(const std::vector<unsigned char> &sig) {
     return true;
 }
 
+uint32_t static GetHashType(const valtype &vchSig) {
+    if (vchSig.size() == 0)
+        return 0;
+    // check IsValidSignatureEncoding()'s comment for vchSig format
+    return vchSig.back();
+}
+
 bool static IsLowDERSignature(const valtype &vchSig, ScriptError* serror) {
     if (!IsValidSignatureEncoding(vchSig)) {
         return set_error(serror, SCRIPT_ERR_SIG_DER);
@@ -185,11 +192,24 @@ bool static IsDefinedHashtypeSignature(const valtype &vchSig) {
     if (vchSig.size() == 0) {
         return false;
     }
-    unsigned char nHashType = vchSig[vchSig.size() - 1] & (~(SIGHASH_ANYONECANPAY));
+    unsigned char nHashType = GetHashType(vchSig) & (~(SIGHASH_ANYONECANPAY | SIGHASH_FORKID));
     if (nHashType < SIGHASH_ALL || nHashType > SIGHASH_SINGLE)
         return false;
 
     return true;
+}
+
+bool static UsesForkId(uint32_t nHashType) {
+    return nHashType & SIGHASH_FORKID;
+}
+
+bool static UsesForkId(const valtype &vchSig) {
+    uint32_t nHashType = GetHashType(vchSig);
+    return UsesForkId(nHashType);
+}
+
+bool static AllowsNonForkId(unsigned int flags) {
+    return flags & SCRIPT_ALLOW_NON_FORKID;
 }
 
 bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned int flags, ScriptError* serror) {
@@ -203,8 +223,14 @@ bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned i
     } else if ((flags & SCRIPT_VERIFY_LOW_S) != 0 && !IsLowDERSignature(vchSig, serror)) {
         // serror is set
         return false;
-    } else if ((flags & SCRIPT_VERIFY_STRICTENC) != 0 && !IsDefinedHashtypeSignature(vchSig)) {
-        return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
+    } else if ((flags & SCRIPT_VERIFY_STRICTENC) != 0) {
+        if (!IsDefinedHashtypeSignature(vchSig))
+            return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
+
+        bool requiresForkId = !AllowsNonForkId(flags);
+        bool usesForkId = UsesForkId(vchSig);
+        if (requiresForkId && !usesForkId)
+            return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
     }
     return true;
 }
@@ -1215,7 +1241,7 @@ uint256 SignatureHash(const CScript& scriptCode, const CTransaction& txTo, unsig
         // Locktime
         ss << txTo.nLockTime;
         // Sighash type
-        ss << nHashType;
+        ss << nForkHashType;
 
         return ss.GetHash();
     }
@@ -1239,7 +1265,7 @@ uint256 SignatureHash(const CScript& scriptCode, const CTransaction& txTo, unsig
 
     // Serialize and hash
     CHashWriter ss(SER_GETHASH, 0);
-    ss << txTmp << nHashType;
+    ss << txTmp << nForkHashType;
     return ss.GetHash();
 }
 
@@ -1258,8 +1284,9 @@ bool TransactionSignatureChecker::CheckSig(const std::vector<unsigned char>& vch
     std::vector<unsigned char> vchSig(vchSigIn);
     if (vchSig.empty())
         return false;
-    int nHashType = vchSig.back();
+    int nHashType = GetHashType(vchSig);
     vchSig.pop_back();
+
 
     uint256 sighash = SignatureHash(scriptCode, *txTo, nIn, nHashType, amount, sigversion, this->txdata);
 
