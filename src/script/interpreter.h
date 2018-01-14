@@ -24,9 +24,16 @@ enum
     SIGHASH_ALL = 1,
     SIGHASH_NONE = 2,
     SIGHASH_SINGLE = 3,
-    SIGHASH_FORKID = 0x40,
     SIGHASH_ANYONECANPAY = 0x80,
 };
+
+enum
+{
+    FORKID_BCC = 0,
+    FORKID_BTCS = 80, // Atomic number AU
+};
+
+static const int FORKID_IN_USE = FORKID_BTCS;
 
 /** Script verification flags */
 enum
