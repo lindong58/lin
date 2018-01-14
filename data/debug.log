@@ -1,0 +1,1093 @@
+2018-01-09 06:55:58 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 06:55:58 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 06:55:58 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 06:55:58 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 06:55:58 Using the 'standard' SHA256 implementation
+2018-01-09 06:55:58 Using RdRand as an additional entropy source
+2018-01-09 06:55:58 Default data directory /root/.bitcoin
+2018-01-09 06:55:58 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 06:55:58 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 06:55:58 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 06:55:58 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 06:55:58 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 06:55:58 Using 4 threads for script verification
+2018-01-09 06:55:58 scheduler thread start
+2018-01-09 06:55:58 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 06:55:58 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 06:55:58 HTTP: creating work queue of depth 16
+2018-01-09 06:55:58 No rpcpassword set - using random cookie authentication
+2018-01-09 06:55:58 Generated RPC authentication cookie /root/btcs/v3/btcsv3/data/.cookie
+2018-01-09 06:55:58 HTTP: starting 4 worker threads
+2018-01-09 06:55:58 init message: Verifying wallet(s)...
+2018-01-09 06:55:58 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 06:55:58 Using wallet wallet.dat
+2018-01-09 06:55:58 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 06:55:58 Cache configuration:
+2018-01-09 06:55:58 * Using 2.0MiB for block index database
+2018-01-09 06:55:58 * Using 8.0MiB for chain state database
+2018-01-09 06:55:58 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 06:55:58 init message: Loading block index...
+2018-01-09 06:55:58 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 06:55:58 Opened LevelDB successfully
+2018-01-09 06:55:58 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 06:55:58 LoadBlockIndexDB: last block file = 0
+2018-01-09 06:55:58 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2018-01-09 06:55:58 Checking all blk files are present...
+2018-01-09 06:55:58 LoadBlockIndexDB: transaction index disabled
+2018-01-09 06:55:58 Initializing databases...
+2018-01-09 06:55:58 Pre-allocating up to position 0x1000000 in blk00000.dat
+2018-01-09 06:55:58 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 06:55:58 Opened LevelDB successfully
+2018-01-09 06:55:58 Wrote new obfuscate key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 06:55:58 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 06:55:58 init message: Rewinding blocks...
+2018-01-09 06:55:58  block index              16ms
+2018-01-09 06:55:58 init message: Loading wallet...
+2018-01-09 06:55:58 nFileVersion = 150001
+2018-01-09 06:55:58 Keys: 0 plaintext, 0 encrypted, 0 w/ metadata, 0 total
+2018-01-09 06:55:58 Performing wallet upgrade to 60000
+2018-01-09 06:55:59 keypool added 2000 keys (1000 internal), size=2000 (1000 internal)
+2018-01-09 06:55:59 keypool reserve 1
+2018-01-09 06:55:59 keypool keep 1
+2018-01-09 06:55:59  wallet                  983ms
+2018-01-09 06:55:59 keypool added 1 keys (0 internal), size=2000 (1000 internal)
+2018-01-09 06:55:59 setKeyPool.size() = 2000
+2018-01-09 06:55:59 mapWallet.size() = 0
+2018-01-09 06:55:59 mapAddressBook.size() = 1
+2018-01-09 06:55:59 UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03 18:15:05' progress=0.000000 cache=0.0MiB(0txo)
+2018-01-09 06:55:59 Failed to open mempool file from disk. Continuing anyway.
+2018-01-09 06:55:59 mapBlockIndex.size() = 1
+2018-01-09 06:55:59 nBestHeight = 0
+2018-01-09 06:55:59 torcontrol thread start
+2018-01-09 06:55:59 Bound to [::]:8345
+2018-01-09 06:55:59 Bound to 0.0.0.0:8345
+2018-01-09 06:55:59 init message: Loading P2P addresses...
+2018-01-09 06:55:59 ERROR: DeserializeFileDB: Failed to open file /root/btcs/v3/btcsv3/data/peers.dat
+2018-01-09 06:55:59 Invalid or missing peers.dat; recreating
+2018-01-09 06:55:59 init message: Loading banlist...
+2018-01-09 06:55:59 ERROR: DeserializeFileDB: Failed to open file /root/btcs/v3/btcsv3/data/banlist.dat
+2018-01-09 06:55:59 Invalid or missing banlist.dat; recreating
+2018-01-09 06:55:59 init message: Starting network threads...
+2018-01-09 06:55:59 dnsseed thread start
+2018-01-09 06:55:59 Loading addresses from DNS seeds (could take a while)
+2018-01-09 06:55:59 net thread start
+2018-01-09 06:55:59 addcon thread start
+2018-01-09 06:55:59 opencon thread start
+2018-01-09 06:55:59 init message: Done loading
+2018-01-09 06:55:59 msghand thread start
+2018-01-09 06:55:59 0 addresses found from DNS seeds
+2018-01-09 06:55:59 dnsseed thread exit
+2018-01-09 06:56:06 ThreadRPCServer incorrect password attempt from 127.0.0.1:59720
+2018-01-09 06:56:09 ThreadRPCServer incorrect password attempt from 127.0.0.1:59724
+2018-01-09 06:56:46 ThreadRPCServer incorrect password attempt from 127.0.0.1:59732
+2018-01-09 06:57:00 Adding fixed seed nodes as DNS doesn't seem to be available.
+2018-01-09 06:57:07 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 06:57:07 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 06:57:07 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 06:57:07 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 06:57:07 Using the 'standard' SHA256 implementation
+2018-01-09 06:57:07 Using RdRand as an additional entropy source
+2018-01-09 06:57:07 Default data directory /root/.bitcoin
+2018-01-09 06:57:07 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 06:57:07 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 06:57:07 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 06:57:07 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 06:57:07 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 06:57:07 Using 4 threads for script verification
+2018-01-09 06:57:07 scheduler thread start
+2018-01-09 06:57:07 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 06:57:07 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 06:57:07 HTTP: creating work queue of depth 16
+2018-01-09 06:57:07 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 06:57:07 HTTP: starting 4 worker threads
+2018-01-09 06:57:07 init message: Verifying wallet(s)...
+2018-01-09 06:57:07 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 06:57:07 Using wallet wallet.dat
+2018-01-09 06:57:07 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 06:57:07 Cache configuration:
+2018-01-09 06:57:07 * Using 2.0MiB for block index database
+2018-01-09 06:57:07 * Using 8.0MiB for chain state database
+2018-01-09 06:57:07 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 06:57:07 init message: Loading block index...
+2018-01-09 06:57:07 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 06:57:07 Opened LevelDB successfully
+2018-01-09 06:57:07 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 06:57:07 LoadBlockIndexDB: last block file = 0
+2018-01-09 06:57:07 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2018-01-09 06:57:07 Checking all blk files are present...
+2018-01-09 06:57:07 LoadBlockIndexDB: transaction index disabled
+2018-01-09 06:57:07 Initializing databases...
+2018-01-09 06:57:07 Pre-allocating up to position 0x1000000 in blk00000.dat
+2018-01-09 06:57:07 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 06:57:07 Opened LevelDB successfully
+2018-01-09 06:57:07 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 06:57:07 init message: Rewinding blocks...
+2018-01-09 06:57:07  block index              15ms
+2018-01-09 06:57:07 init message: Loading wallet...
+2018-01-09 06:57:07 nFileVersion = 150001
+2018-01-09 06:57:07 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 06:57:07  wallet                   32ms
+2018-01-09 06:57:07 setKeyPool.size() = 2000
+2018-01-09 06:57:07 mapWallet.size() = 0
+2018-01-09 06:57:07 mapAddressBook.size() = 1
+2018-01-09 06:57:07 UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03 18:15:05' progress=0.000000 cache=0.0MiB(0txo)
+2018-01-09 06:57:07 Failed to open mempool file from disk. Continuing anyway.
+2018-01-09 06:57:07 mapBlockIndex.size() = 1
+2018-01-09 06:57:07 nBestHeight = 0
+2018-01-09 06:57:07 torcontrol thread start
+2018-01-09 06:57:07 Bound to [::]:8345
+2018-01-09 06:57:07 Bound to 0.0.0.0:8345
+2018-01-09 06:57:07 init message: Loading P2P addresses...
+2018-01-09 06:57:07 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 06:57:07 init message: Loading banlist...
+2018-01-09 06:57:07 init message: Starting network threads...
+2018-01-09 06:57:07 net thread start
+2018-01-09 06:57:07 dnsseed thread start
+2018-01-09 06:57:07 Loading addresses from DNS seeds (could take a while)
+2018-01-09 06:57:07 init message: Done loading
+2018-01-09 06:57:07 opencon thread start
+2018-01-09 06:57:07 addcon thread start
+2018-01-09 06:57:07 msghand thread start
+2018-01-09 06:57:07 0 addresses found from DNS seeds
+2018-01-09 06:57:07 dnsseed thread exit
+2018-01-09 06:57:11 ThreadRPCServer incorrect password attempt from 127.0.0.1:59742
+2018-01-09 06:58:05 ThreadRPCServer incorrect password attempt from 127.0.0.1:59756
+2018-01-09 06:58:08 Adding fixed seed nodes as DNS doesn't seem to be available.
+2018-01-09 06:58:56 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 06:58:56 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 06:58:56 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 06:58:56 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 06:58:56 Using the 'standard' SHA256 implementation
+2018-01-09 06:58:56 Using RdRand as an additional entropy source
+2018-01-09 06:58:56 Default data directory /root/.bitcoin
+2018-01-09 06:58:56 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 06:58:56 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 06:58:56 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 06:58:56 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 06:58:56 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 06:58:56 Using 4 threads for script verification
+2018-01-09 06:58:56 scheduler thread start
+2018-01-09 06:58:56 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 06:58:56 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 06:58:56 HTTP: creating work queue of depth 16
+2018-01-09 06:58:56 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 06:58:56 HTTP: starting 4 worker threads
+2018-01-09 06:58:56 init message: Verifying wallet(s)...
+2018-01-09 06:58:56 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 06:58:56 Using wallet wallet.dat
+2018-01-09 06:58:56 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 06:58:56 Cache configuration:
+2018-01-09 06:58:56 * Using 2.0MiB for block index database
+2018-01-09 06:58:56 * Using 8.0MiB for chain state database
+2018-01-09 06:58:56 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 06:58:56 init message: Loading block index...
+2018-01-09 06:58:56 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 06:58:56 Opened LevelDB successfully
+2018-01-09 06:58:56 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 06:58:56 LoadBlockIndexDB: last block file = 0
+2018-01-09 06:58:56 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2018-01-09 06:58:56 Checking all blk files are present...
+2018-01-09 06:58:56 LoadBlockIndexDB: transaction index disabled
+2018-01-09 06:58:56 Initializing databases...
+2018-01-09 06:58:56 Pre-allocating up to position 0x1000000 in blk00000.dat
+2018-01-09 06:58:56 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 06:58:56 Opened LevelDB successfully
+2018-01-09 06:58:56 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 06:58:56 init message: Rewinding blocks...
+2018-01-09 06:58:56  block index              12ms
+2018-01-09 06:58:56 init message: Loading wallet...
+2018-01-09 06:58:56 nFileVersion = 150001
+2018-01-09 06:58:56 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 06:58:56  wallet                   31ms
+2018-01-09 06:58:56 setKeyPool.size() = 2000
+2018-01-09 06:58:56 mapWallet.size() = 0
+2018-01-09 06:58:56 mapAddressBook.size() = 1
+2018-01-09 06:58:56 UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03 18:15:05' progress=0.000000 cache=0.0MiB(0txo)
+2018-01-09 06:58:56 Failed to open mempool file from disk. Continuing anyway.
+2018-01-09 06:58:56 mapBlockIndex.size() = 1
+2018-01-09 06:58:56 nBestHeight = 0
+2018-01-09 06:58:56 torcontrol thread start
+2018-01-09 06:58:56 Bound to [::]:8345
+2018-01-09 06:58:56 Bound to 0.0.0.0:8345
+2018-01-09 06:58:56 init message: Loading P2P addresses...
+2018-01-09 06:58:56 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 06:58:56 init message: Loading banlist...
+2018-01-09 06:58:56 init message: Starting network threads...
+2018-01-09 06:58:56 dnsseed thread start
+2018-01-09 06:58:56 Loading addresses from DNS seeds (could take a while)
+2018-01-09 06:58:56 net thread start
+2018-01-09 06:58:56 addcon thread start
+2018-01-09 06:58:56 opencon thread start
+2018-01-09 06:58:56 init message: Done loading
+2018-01-09 06:58:56 msghand thread start
+2018-01-09 06:58:56 0 addresses found from DNS seeds
+2018-01-09 06:58:56 dnsseed thread exit
+2018-01-09 06:59:01 ThreadRPCServer incorrect password attempt from 127.0.0.1:59766
+2018-01-09 06:59:03 ThreadRPCServer incorrect password attempt from 127.0.0.1:59770
+2018-01-09 06:59:56 ThreadRPCServer incorrect password attempt from 127.0.0.1:59782
+2018-01-09 06:59:57 Adding fixed seed nodes as DNS doesn't seem to be available.
+2018-01-09 07:00:16 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:00:16 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:00:16 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:00:16 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:00:16 Using the 'standard' SHA256 implementation
+2018-01-09 07:00:16 Using RdRand as an additional entropy source
+2018-01-09 07:00:16 Default data directory /root/.bitcoin
+2018-01-09 07:00:16 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:00:16 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:00:16 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:00:16 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:00:16 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:00:16 Using 4 threads for script verification
+2018-01-09 07:00:16 scheduler thread start
+2018-01-09 07:00:16 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:00:16 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:00:16 HTTP: creating work queue of depth 16
+2018-01-09 07:00:16 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:00:16 HTTP: starting 4 worker threads
+2018-01-09 07:00:16 init message: Verifying wallet(s)...
+2018-01-09 07:00:16 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:00:16 Using wallet wallet.dat
+2018-01-09 07:00:16 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:00:16 Cache configuration:
+2018-01-09 07:00:16 * Using 2.0MiB for block index database
+2018-01-09 07:00:16 * Using 8.0MiB for chain state database
+2018-01-09 07:00:16 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:00:16 init message: Loading block index...
+2018-01-09 07:00:16 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:00:16 Opened LevelDB successfully
+2018-01-09 07:00:16 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:00:16 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:00:16 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2018-01-09 07:00:16 Checking all blk files are present...
+2018-01-09 07:00:16 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:00:16 Initializing databases...
+2018-01-09 07:00:16 Pre-allocating up to position 0x1000000 in blk00000.dat
+2018-01-09 07:00:16 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:00:16 Opened LevelDB successfully
+2018-01-09 07:00:16 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:00:16 init message: Rewinding blocks...
+2018-01-09 07:00:16  block index              13ms
+2018-01-09 07:00:16 init message: Loading wallet...
+2018-01-09 07:00:16 nFileVersion = 150001
+2018-01-09 07:00:16 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:00:16  wallet                   31ms
+2018-01-09 07:00:16 setKeyPool.size() = 2000
+2018-01-09 07:00:16 mapWallet.size() = 0
+2018-01-09 07:00:16 mapAddressBook.size() = 1
+2018-01-09 07:00:16 UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03 18:15:05' progress=0.000000 cache=0.0MiB(0txo)
+2018-01-09 07:00:16 Failed to open mempool file from disk. Continuing anyway.
+2018-01-09 07:00:16 mapBlockIndex.size() = 1
+2018-01-09 07:00:16 nBestHeight = 0
+2018-01-09 07:00:16 torcontrol thread start
+2018-01-09 07:00:16 Bound to [::]:8345
+2018-01-09 07:00:16 Bound to 0.0.0.0:8345
+2018-01-09 07:00:16 init message: Loading P2P addresses...
+2018-01-09 07:00:16 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 07:00:16 init message: Loading banlist...
+2018-01-09 07:00:16 init message: Starting network threads...
+2018-01-09 07:00:16 net thread start
+2018-01-09 07:00:16 dnsseed thread start
+2018-01-09 07:00:16 Loading addresses from DNS seeds (could take a while)
+2018-01-09 07:00:16 addcon thread start
+2018-01-09 07:00:16 init message: Done loading
+2018-01-09 07:00:16 msghand thread start
+2018-01-09 07:00:16 opencon thread start
+2018-01-09 07:00:16 0 addresses found from DNS seeds
+2018-01-09 07:00:16 dnsseed thread exit
+2018-01-09 07:00:19 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>request getdifficulty>>>>>>>>>>>>>>>>>>>>>>request getdifficulty>>>>>>>>>>>>>>>>>>>>>>Adding fixed seed nodes as DNS doesn't seem to be available.
+2018-01-09 07:04:51 tor: Thread interrupt
+2018-01-09 07:04:51 torcontrol thread exit
+2018-01-09 07:04:51 addcon thread exit
+2018-01-09 07:04:51 scheduler thread interrupt
+2018-01-09 07:04:51 opencon thread exit
+2018-01-09 07:04:51 Shutdown: In progress...
+2018-01-09 07:04:51 net thread exit
+2018-01-09 07:04:51 msghand thread exit
+2018-01-09 07:04:51 Dumped mempool: 3e-06s to copy, 0.001741s to dump
+2018-01-09 07:04:51 Shutdown: done
+2018-01-09 07:04:53 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:04:53 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:04:53 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:04:53 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:04:53 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:04:53 Using the 'standard' SHA256 implementation
+2018-01-09 07:04:53 Using RdRand as an additional entropy source
+2018-01-09 07:04:53 Default data directory /root/.bitcoin
+2018-01-09 07:04:53 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:04:53 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:04:53 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:04:53 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:04:53 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:04:53 Using 4 threads for script verification
+2018-01-09 07:04:53 scheduler thread start
+2018-01-09 07:04:53 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:04:53 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:04:53 HTTP: creating work queue of depth 16
+2018-01-09 07:04:53 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:04:53 HTTP: starting 4 worker threads
+2018-01-09 07:04:53 init message: Verifying wallet(s)...
+2018-01-09 07:04:53 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:04:53 Using wallet wallet.dat
+2018-01-09 07:04:53 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:04:53 Cache configuration:
+2018-01-09 07:04:53 * Using 2.0MiB for block index database
+2018-01-09 07:04:53 * Using 8.0MiB for chain state database
+2018-01-09 07:04:53 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:04:53 init message: Loading block index...
+2018-01-09 07:04:53 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:04:53 Opened LevelDB successfully
+2018-01-09 07:04:53 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:04:53 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:04:53 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:04:53 Checking all blk files are present...
+2018-01-09 07:04:53 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:04:53 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:04:53 Opened LevelDB successfully
+2018-01-09 07:04:53 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:04:53 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:04:53 init message: Rewinding blocks...
+2018-01-09 07:04:53 init message: Verifying blocks...
+2018-01-09 07:04:53  block index              17ms
+2018-01-09 07:04:53 init message: Loading wallet...
+2018-01-09 07:04:53 nFileVersion = 150001
+2018-01-09 07:04:53 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:04:53  wallet                   29ms
+2018-01-09 07:04:53 setKeyPool.size() = 2000
+2018-01-09 07:04:53 mapWallet.size() = 0
+2018-01-09 07:04:53 mapAddressBook.size() = 1
+2018-01-09 07:04:53 mapBlockIndex.size() = 1
+2018-01-09 07:04:53 nBestHeight = 0
+2018-01-09 07:04:53 Bound to 0.0.0.0:8345
+2018-01-09 07:04:53 torcontrol thread start
+2018-01-09 07:04:53 init message: Loading P2P addresses...
+2018-01-09 07:04:53 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:04:53 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 07:04:53 init message: Loading banlist...
+2018-01-09 07:04:53 init message: Starting network threads...
+2018-01-09 07:04:53 net thread start
+2018-01-09 07:04:53 dnsseed thread start
+2018-01-09 07:04:53 addcon thread start
+2018-01-09 07:04:53 Loading addresses from DNS seeds (could take a while)
+2018-01-09 07:04:53 opencon thread start
+2018-01-09 07:04:53 init message: Done loading
+2018-01-09 07:04:53 msghand thread start
+2018-01-09 07:04:53 0 addresses found from DNS seeds
+2018-01-09 07:04:53 dnsseed thread exit
+2018-01-09 07:05:54 Adding fixed seed nodes as DNS doesn't seem to be available.
+2018-01-09 07:07:24 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=0
+2018-01-09 07:07:31 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=1
+2018-01-09 07:07:36 tor: Thread interrupt
+2018-01-09 07:07:36 torcontrol thread exit
+2018-01-09 07:07:36 addcon thread exit
+2018-01-09 07:07:36 opencon thread exit
+2018-01-09 07:07:36 scheduler thread interrupt
+2018-01-09 07:07:36 Shutdown: In progress...
+2018-01-09 07:07:36 msghand thread exit
+2018-01-09 07:07:36 net thread exit
+2018-01-09 07:07:36 Dumped mempool: 3e-06s to copy, 0.002293s to dump
+2018-01-09 07:07:36 Shutdown: done
+2018-01-09 07:07:44 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:07:44 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:07:44 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:07:44 InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2018-01-09 07:07:44 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:07:44 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:07:44 Using the 'standard' SHA256 implementation
+2018-01-09 07:07:44 Using RdRand as an additional entropy source
+2018-01-09 07:07:44 Default data directory /root/.bitcoin
+2018-01-09 07:07:44 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:07:44 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:07:44 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:07:44 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:07:44 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:07:44 Using 4 threads for script verification
+2018-01-09 07:07:44 scheduler thread start
+2018-01-09 07:07:44 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:07:44 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:07:44 HTTP: creating work queue of depth 16
+2018-01-09 07:07:44 Starting RPC
+2018-01-09 07:07:44 Starting HTTP RPC server
+2018-01-09 07:07:44 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:07:44 HTTP: starting 4 worker threads
+2018-01-09 07:07:44 init message: Verifying wallet(s)...
+2018-01-09 07:07:44 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:07:44 Using wallet wallet.dat
+2018-01-09 07:07:44 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:07:44 Cache configuration:
+2018-01-09 07:07:44 * Using 2.0MiB for block index database
+2018-01-09 07:07:44 * Using 8.0MiB for chain state database
+2018-01-09 07:07:44 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:07:44 init message: Loading block index...
+2018-01-09 07:07:44 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:07:44 Opened LevelDB successfully
+2018-01-09 07:07:44 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:07:44 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:07:44 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:07:44 Checking all blk files are present...
+2018-01-09 07:07:44 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:07:44 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:07:44 Opened LevelDB successfully
+2018-01-09 07:07:44 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:07:44 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:07:44 init message: Rewinding blocks...
+2018-01-09 07:07:44 init message: Verifying blocks...
+2018-01-09 07:07:44  block index              19ms
+2018-01-09 07:07:44 init message: Loading wallet...
+2018-01-09 07:07:44 nFileVersion = 150001
+2018-01-09 07:07:44 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:07:44  wallet                   29ms
+2018-01-09 07:07:44 setKeyPool.size() = 2000
+2018-01-09 07:07:44 mapWallet.size() = 0
+2018-01-09 07:07:44 mapAddressBook.size() = 1
+2018-01-09 07:07:44 mapBlockIndex.size() = 1
+2018-01-09 07:07:44 nBestHeight = 0
+2018-01-09 07:07:44 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:07:44 Bound to 0.0.0.0:8345
+2018-01-09 07:07:44 init message: Loading P2P addresses...
+2018-01-09 07:07:44 torcontrol thread start
+2018-01-09 07:07:44 Loaded 0 addresses from peers.dat  1ms
+2018-01-09 07:07:44 init message: Loading banlist...
+2018-01-09 07:07:44 init message: Starting network threads...
+2018-01-09 07:07:44 DNS seeding disabled
+2018-01-09 07:07:44 net thread start
+2018-01-09 07:07:44 opencon thread start
+2018-01-09 07:07:44 addcon thread start
+2018-01-09 07:07:44 init message: Done loading
+2018-01-09 07:07:44 msghand thread start
+2018-01-09 07:07:44 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:50162, peer=0
+2018-01-09 07:07:44 connected to self at 116.62.131.192:53142, disconnecting
+2018-01-09 07:07:45 connected to self at 116.62.131.192:53146, disconnecting
+2018-01-09 07:07:45 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=5
+2018-01-09 07:07:46 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=6
+2018-01-09 07:07:47 connected to self at 116.62.131.192:53150, disconnecting
+2018-01-09 07:07:48 ThreadRPCServer method=getinfo
+2018-01-09 07:07:48 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53156, disconnecting
+2018-01-09 07:07:51 ThreadRPCServer method=getinfo
+2018-01-09 07:07:51 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:07:51 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:07:52 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53166, disconnecting
+2018-01-09 07:07:59 connected to self at 116.62.131.192:53170, disconnecting
+2018-01-09 07:08:05 connected to self at 116.62.131.192:53174, disconnecting
+2018-01-09 07:08:12 connected to self at 116.62.131.192:53176, disconnecting
+2018-01-09 07:08:20 connected to self at 116.62.131.192:53180, disconnecting
+2018-01-09 07:08:29 connected to self at 116.62.131.192:53182, disconnecting
+2018-01-09 07:08:39 connected to self at 116.62.131.192:53186, disconnecting
+2018-01-09 07:08:49 connected to self at 116.62.131.192:53188, disconnecting
+2018-01-09 07:09:00 connected to self at 116.62.131.192:53194, disconnecting
+2018-01-09 07:09:06 ThreadRPCServer method=getblocktemplate
+2018-01-09 07:09:10 connected to self at 116.62.131.192:53198, disconnecting
+2018-01-09 07:09:16 ThreadRPCServer method=getblocktemplate
+2018-01-09 07:09:21 connected to self at 116.62.131.192:53202, disconnecting
+2018-01-09 07:09:31 connected to self at 116.62.131.192:53204, disconnecting
+2018-01-09 07:09:42 connected to self at 116.62.131.192:53208, disconnecting
+2018-01-09 07:09:52 connected to self at 116.62.131.192:53210, disconnecting
+2018-01-09 07:10:01 ThreadRPCServer method=getinfo
+2018-01-09 07:10:01 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53214, disconnecting
+2018-01-09 07:10:13 connected to self at 116.62.131.192:53216, disconnecting
+2018-01-09 07:10:24 connected to self at 116.62.131.192:53218, disconnecting
+2018-01-09 07:10:34 connected to self at 116.62.131.192:53220, disconnecting
+2018-01-09 07:10:45 connected to self at 116.62.131.192:53224, disconnecting
+2018-01-09 07:10:55 connected to self at 116.62.131.192:53226, disconnecting
+2018-01-09 07:11:05 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=52
+2018-01-09 07:11:06 connected to self at 116.62.131.192:53228, disconnecting
+2018-01-09 07:11:11 connect() to 116.62.18.57:8345 failed after select(): Connection refused (111)
+2018-01-09 07:11:16 connected to self at 116.62.131.192:53232, disconnecting
+2018-01-09 07:11:22 connect() to 116.62.18.57:8345 failed after select(): Connection refused (111)
+2018-01-09 07:11:27 connected to self at 116.62.131.192:53236, disconnecting
+2018-01-09 07:11:32 connect() to 116.62.18.57:8345 failed after select(): Connection refused (111)
+2018-01-09 07:11:37 connected to self at 116.62.131.192:53240, disconnecting
+2018-01-09 07:11:43 connect() to 116.62.18.57:8345 failed after select(): Connection refused (111)
+2018-01-09 07:11:48 connected to self at 116.62.131.192:53244, disconnecting
+2018-01-09 07:11:53 connect() to 116.62.18.57:8345 failed after select(): Connection refused (111)
+2018-01-09 07:11:57 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=63
+2018-01-09 07:11:58 connected to self at 116.62.131.192:53248, disconnecting
+2018-01-09 07:12:03 ThreadRPCServer method=stop
+2018-01-09 07:12:03 Interrupting HTTP RPC server
+2018-01-09 07:12:03 Interrupting RPC
+2018-01-09 07:12:03 tor: Thread interrupt
+2018-01-09 07:12:03 torcontrol thread exit
+2018-01-09 07:12:03 addcon thread exit
+2018-01-09 07:12:03 opencon thread exit
+2018-01-09 07:12:03 scheduler thread interrupt
+2018-01-09 07:12:03 Shutdown: In progress...
+2018-01-09 07:12:03 Stopping HTTP RPC server
+2018-01-09 07:12:03 Stopping RPC
+2018-01-09 07:12:03 RPC stopped.
+2018-01-09 07:12:03 msghand thread exit
+2018-01-09 07:12:03 net thread exit
+2018-01-09 07:12:03 Dumped mempool: 2e-06s to copy, 0.00201s to dump
+2018-01-09 07:12:03 Shutdown: done
+2018-01-09 07:13:01 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:13:01 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:13:01 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:13:01 InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2018-01-09 07:13:01 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:13:01 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:13:01 Using the 'standard' SHA256 implementation
+2018-01-09 07:13:01 Using RdRand as an additional entropy source
+2018-01-09 07:13:01 Default data directory /root/.bitcoin
+2018-01-09 07:13:01 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:13:01 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:13:01 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:13:01 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:13:01 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:13:01 Using 4 threads for script verification
+2018-01-09 07:13:01 scheduler thread start
+2018-01-09 07:13:01 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:13:01 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:13:01 HTTP: creating work queue of depth 16
+2018-01-09 07:13:01 Starting RPC
+2018-01-09 07:13:01 Starting HTTP RPC server
+2018-01-09 07:13:01 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:13:01 HTTP: starting 4 worker threads
+2018-01-09 07:13:01 init message: Verifying wallet(s)...
+2018-01-09 07:13:01 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:13:01 Using wallet wallet.dat
+2018-01-09 07:13:01 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:13:01 Cache configuration:
+2018-01-09 07:13:01 * Using 2.0MiB for block index database
+2018-01-09 07:13:01 * Using 8.0MiB for chain state database
+2018-01-09 07:13:01 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:13:01 init message: Loading block index...
+2018-01-09 07:13:01 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:13:01 Opened LevelDB successfully
+2018-01-09 07:13:01 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:13:01 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:13:01 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:13:01 Checking all blk files are present...
+2018-01-09 07:13:01 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:13:01 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:13:01 Opened LevelDB successfully
+2018-01-09 07:13:01 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:13:01 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:13:01 init message: Rewinding blocks...
+2018-01-09 07:13:01 init message: Verifying blocks...
+2018-01-09 07:13:01  block index              19ms
+2018-01-09 07:13:01 init message: Loading wallet...
+2018-01-09 07:13:01 nFileVersion = 150001
+2018-01-09 07:13:01 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:13:01  wallet                   31ms
+2018-01-09 07:13:01 setKeyPool.size() = 2000
+2018-01-09 07:13:01 mapWallet.size() = 0
+2018-01-09 07:13:01 mapAddressBook.size() = 1
+2018-01-09 07:13:01 mapBlockIndex.size() = 1
+2018-01-09 07:13:01 nBestHeight = 0
+2018-01-09 07:13:01 Bound to 0.0.0.0:8345
+2018-01-09 07:13:01 init message: Loading P2P addresses...
+2018-01-09 07:13:01 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:13:01 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 07:13:01 init message: Loading banlist...
+2018-01-09 07:13:01 torcontrol thread start
+2018-01-09 07:13:01 init message: Starting network threads...
+2018-01-09 07:13:01 DNS seeding disabled
+2018-01-09 07:13:01 net thread start
+2018-01-09 07:13:01 opencon thread start
+2018-01-09 07:13:01 init message: Done loading
+2018-01-09 07:13:01 msghand thread start
+2018-01-09 07:13:01 addcon thread start
+2018-01-09 07:13:01 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:50278, peer=0
+2018-01-09 07:13:01 connected to self at 116.62.131.192:53258, disconnecting
+2018-01-09 07:13:02 connected to self at 116.62.131.192:53262, disconnecting
+2018-01-09 07:13:05 connected to self at 116.62.131.192:53266, disconnecting
+2018-01-09 07:13:07 ThreadRPCServer method=getinfo
+2018-01-09 07:13:07 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53272, disconnecting
+2018-01-09 07:13:10 ThreadRPCServer method=getinfo
+2018-01-09 07:13:10 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:13:10 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=9
+2018-01-09 07:13:14 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=10
+2018-01-09 07:13:14 connected to self at 116.62.131.192:53280, disconnecting
+2018-01-09 07:13:18 ThreadRPCServer method=getinfo
+2018-01-09 07:13:18 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:13:18 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53288, disconnecting
+2018-01-09 07:13:30 connected to self at 116.62.131.192:53292, disconnecting
+2018-01-09 07:13:40 connected to self at 116.62.131.192:53296, disconnecting
+2018-01-09 07:13:51 connected to self at 116.62.131.192:53302, disconnecting
+2018-01-09 07:14:04 connected to self at 116.62.131.192:53304, disconnecting
+2018-01-09 07:14:05 ThreadRPCServer method=getblocktemplate
+2018-01-09 07:14:15 ThreadRPCServer method=getblocktemplate
+2018-01-09 07:14:19 connected to self at 116.62.131.192:53312, disconnecting
+2018-01-09 07:14:34 connected to self at 116.62.131.192:53314, disconnecting
+2018-01-09 07:14:50 connected to self at 116.62.131.192:53316, disconnecting
+2018-01-09 07:15:06 connected to self at 116.62.131.192:53320, disconnecting
+2018-01-09 07:15:21 connected to self at 116.62.131.192:53322, disconnecting
+2018-01-09 07:15:37 connected to self at 116.62.131.192:53324, disconnecting
+2018-01-09 07:15:52 connected to self at 116.62.131.192:53326, disconnecting
+2018-01-09 07:16:08 connected to self at 116.62.131.192:53330, disconnecting
+2018-01-09 07:16:23 connected to self at 116.62.131.192:53332, disconnecting
+2018-01-09 07:16:39 connected to self at 116.62.131.192:53334, disconnecting
+2018-01-09 07:16:54 connected to self at 116.62.131.192:53336, disconnecting
+2018-01-09 07:17:10 connected to self at 116.62.131.192:53338, disconnecting
+2018-01-09 07:17:25 connected to self at 116.62.131.192:53342, disconnecting
+2018-01-09 07:17:41 connected to self at 116.62.131.192:53344, disconnecting
+2018-01-09 07:17:56 connected to self at 116.62.131.192:53346, disconnecting
+2018-01-09 07:18:12 connected to self at 116.62.131.192:53348, disconnecting
+2018-01-09 07:18:27 connected to self at 116.62.131.192:53350, disconnecting
+2018-01-09 07:18:40 ThreadRPCServer method=stop
+2018-01-09 07:18:40 Interrupting HTTP RPC server
+2018-01-09 07:18:40 Interrupting RPC
+2018-01-09 07:18:40 tor: Thread interrupt
+2018-01-09 07:18:40 addcon thread exit
+2018-01-09 07:18:40 torcontrol thread exit
+2018-01-09 07:18:40 scheduler thread interrupt
+2018-01-09 07:18:40 opencon thread exit
+2018-01-09 07:18:40 Shutdown: In progress...
+2018-01-09 07:18:40 Stopping HTTP RPC server
+2018-01-09 07:18:40 Stopping RPC
+2018-01-09 07:18:40 RPC stopped.
+2018-01-09 07:18:40 msghand thread exit
+2018-01-09 07:18:40 net thread exit
+2018-01-09 07:18:40 Dumped mempool: 3e-06s to copy, 0.002007s to dump
+2018-01-09 07:18:40 Shutdown: done
+2018-01-09 07:18:43 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:18:43 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:18:43 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:18:43 InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2018-01-09 07:18:43 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:18:43 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:18:43 Using the 'standard' SHA256 implementation
+2018-01-09 07:18:43 Using RdRand as an additional entropy source
+2018-01-09 07:18:43 Default data directory /root/.bitcoin
+2018-01-09 07:18:43 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:18:43 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:18:43 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:18:43 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:18:43 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:18:43 Using 4 threads for script verification
+2018-01-09 07:18:43 scheduler thread start
+2018-01-09 07:18:43 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:18:43 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:18:43 HTTP: creating work queue of depth 16
+2018-01-09 07:18:43 Starting RPC
+2018-01-09 07:18:43 Starting HTTP RPC server
+2018-01-09 07:18:43 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:18:43 HTTP: starting 4 worker threads
+2018-01-09 07:18:43 init message: Verifying wallet(s)...
+2018-01-09 07:18:43 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:18:43 Using wallet wallet.dat
+2018-01-09 07:18:43 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:18:43 Cache configuration:
+2018-01-09 07:18:43 * Using 2.0MiB for block index database
+2018-01-09 07:18:43 * Using 8.0MiB for chain state database
+2018-01-09 07:18:43 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:18:43 init message: Loading block index...
+2018-01-09 07:18:43 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:18:43 Opened LevelDB successfully
+2018-01-09 07:18:43 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:18:43 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:18:43 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:18:43 Checking all blk files are present...
+2018-01-09 07:18:43 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:18:43 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:18:43 Opened LevelDB successfully
+2018-01-09 07:18:43 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:18:43 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:18:43 init message: Rewinding blocks...
+2018-01-09 07:18:43 init message: Verifying blocks...
+2018-01-09 07:18:43  block index              17ms
+2018-01-09 07:18:43 init message: Loading wallet...
+2018-01-09 07:18:43 nFileVersion = 150001
+2018-01-09 07:18:43 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:18:43  wallet                   30ms
+2018-01-09 07:18:43 setKeyPool.size() = 2000
+2018-01-09 07:18:43 mapWallet.size() = 0
+2018-01-09 07:18:43 mapAddressBook.size() = 1
+2018-01-09 07:18:43 mapBlockIndex.size() = 1
+2018-01-09 07:18:43 nBestHeight = 0
+2018-01-09 07:18:43 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:18:43 Unable to bind to 0.0.0.0:8344 on this computer. Bitcoin Core is probably already running.
+2018-01-09 07:18:43 Error: Unable to bind to 0.0.0.0:8344 on this computer. Bitcoin Core is probably already running.
+2018-01-09 07:18:43 torcontrol thread start
+2018-01-09 07:18:43 Error: Failed to listen on any port. Use -listen=0 if you want this.
+2018-01-09 07:18:43 Interrupting HTTP RPC server
+2018-01-09 07:18:43 Interrupting RPC
+2018-01-09 07:18:43 tor: Thread interrupt
+2018-01-09 07:18:43 scheduler thread interrupt
+2018-01-09 07:18:43 Shutdown: In progress...
+2018-01-09 07:18:43 Stopping HTTP RPC server
+2018-01-09 07:18:43 Stopping RPC
+2018-01-09 07:18:43 RPC stopped.
+2018-01-09 07:19:20 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:19:20 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:19:20 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:19:20 InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2018-01-09 07:19:20 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:19:20 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:19:20 Using the 'standard' SHA256 implementation
+2018-01-09 07:19:20 Using RdRand as an additional entropy source
+2018-01-09 07:19:20 Default data directory /root/.bitcoin
+2018-01-09 07:19:20 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:19:20 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:19:20 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:19:20 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:19:20 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:19:20 Using 4 threads for script verification
+2018-01-09 07:19:20 scheduler thread start
+2018-01-09 07:19:20 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:19:20 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:19:20 HTTP: creating work queue of depth 16
+2018-01-09 07:19:20 Starting RPC
+2018-01-09 07:19:20 Starting HTTP RPC server
+2018-01-09 07:19:20 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:19:20 HTTP: starting 4 worker threads
+2018-01-09 07:19:20 init message: Verifying wallet(s)...
+2018-01-09 07:19:20 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:19:20 Using wallet wallet.dat
+2018-01-09 07:19:20 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:19:20 Cache configuration:
+2018-01-09 07:19:20 * Using 2.0MiB for block index database
+2018-01-09 07:19:20 * Using 8.0MiB for chain state database
+2018-01-09 07:19:20 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:19:20 init message: Loading block index...
+2018-01-09 07:19:20 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:19:20 Opened LevelDB successfully
+2018-01-09 07:19:20 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:19:20 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:19:20 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:19:20 Checking all blk files are present...
+2018-01-09 07:19:20 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:19:20 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:19:20 Opened LevelDB successfully
+2018-01-09 07:19:20 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:19:20 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:19:20 init message: Rewinding blocks...
+2018-01-09 07:19:20 init message: Verifying blocks...
+2018-01-09 07:19:20  block index              21ms
+2018-01-09 07:19:20 init message: Loading wallet...
+2018-01-09 07:19:20 nFileVersion = 150001
+2018-01-09 07:19:20 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:19:20  wallet                   35ms
+2018-01-09 07:19:20 setKeyPool.size() = 2000
+2018-01-09 07:19:20 mapWallet.size() = 0
+2018-01-09 07:19:20 mapAddressBook.size() = 1
+2018-01-09 07:19:20 mapBlockIndex.size() = 1
+2018-01-09 07:19:20 nBestHeight = 0
+2018-01-09 07:19:20 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:19:20 torcontrol thread start
+2018-01-09 07:19:20 Bound to 0.0.0.0:8345
+2018-01-09 07:19:20 init message: Loading P2P addresses...
+2018-01-09 07:19:20 Loaded 0 addresses from peers.dat  0ms
+2018-01-09 07:19:20 init message: Loading banlist...
+2018-01-09 07:19:20 init message: Starting network threads...
+2018-01-09 07:19:20 DNS seeding disabled
+2018-01-09 07:19:20 net thread start
+2018-01-09 07:19:20 addcon thread start
+2018-01-09 07:19:20 opencon thread start
+2018-01-09 07:19:20 init message: Done loading
+2018-01-09 07:19:20 msghand thread start
+2018-01-09 07:19:20 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:50408, peer=0
+2018-01-09 07:19:20 connected to self at 116.62.131.192:53388, disconnecting
+2018-01-09 07:19:21 connected to self at 116.62.131.192:53392, disconnecting
+2018-01-09 07:19:23 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=5
+2018-01-09 07:19:24 connected to self at 116.62.131.192:53396, disconnecting
+2018-01-09 07:19:25 ThreadRPCServer method=getinfo
+2018-01-09 07:19:25 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=8
+2018-01-09 07:19:28 connected to self at 116.62.131.192:53402, disconnecting
+2018-01-09 07:19:28 ThreadRPCServer method=getinfo
+2018-01-09 07:19:28 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:19:29 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:19:29 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>connected to self at 116.62.131.192:53412, disconnecting
+2018-01-09 07:19:40 connected to self at 116.62.131.192:53416, disconnecting
+2018-01-09 07:19:49 connected to self at 116.62.131.192:53420, disconnecting
+2018-01-09 07:19:59 connected to self at 116.62.131.192:53424, disconnecting
+2018-01-09 07:20:10 connected to self at 116.62.131.192:53428, disconnecting
+2018-01-09 07:20:10 ThreadRPCServer method=stop
+2018-01-09 07:20:10 Interrupting HTTP RPC server
+2018-01-09 07:20:10 Interrupting RPC
+2018-01-09 07:20:10 tor: Thread interrupt
+2018-01-09 07:20:10 torcontrol thread exit
+2018-01-09 07:20:10 addcon thread exit
+2018-01-09 07:20:10 opencon thread exit
+2018-01-09 07:20:10 scheduler thread interrupt
+2018-01-09 07:20:10 Shutdown: In progress...
+2018-01-09 07:20:10 Stopping HTTP RPC server
+2018-01-09 07:20:10 Stopping RPC
+2018-01-09 07:20:10 RPC stopped.
+2018-01-09 07:20:10 msghand thread exit
+2018-01-09 07:20:10 net thread exit
+2018-01-09 07:20:10 Dumped mempool: 3e-06s to copy, 0.002176s to dump
+2018-01-09 07:20:11 Shutdown: done
+2018-01-09 07:20:14 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2018-01-09 07:20:14 Bitcoin version v0.15.0.1-gfb7b5293844
+2018-01-09 07:20:14 InitParameterInteraction: parameter interaction: -bind set -> setting -listen=1
+2018-01-09 07:20:14 InitParameterInteraction: parameter interaction: -connect set -> setting -dnsseed=0
+2018-01-09 07:20:14 InitParameterInteraction: parameter interaction: -whitelistforcerelay=1 -> setting -whitelistrelay=1
+2018-01-09 07:20:14 Assuming ancestors of block 0000000000000000003b9ce759c2a087d52abc4266f8f4ebd6d768b89defa50a have valid signatures.
+2018-01-09 07:20:14 Using the 'standard' SHA256 implementation
+2018-01-09 07:20:14 Using RdRand as an additional entropy source
+2018-01-09 07:20:14 Default data directory /root/.bitcoin
+2018-01-09 07:20:14 Using data directory /root/btcs/v3/btcsv3/data/
+2018-01-09 07:20:14 Using config file /root/btcs/v3/btcsv3/data/bitcoin.conf
+2018-01-09 07:20:14 Using at most 125 automatic connections (65535 file descriptors available)
+2018-01-09 07:20:14 Using 16 MiB out of 32/2 requested for signature cache, able to store 524288 elements
+2018-01-09 07:20:14 Using 16 MiB out of 32/2 requested for script execution cache, able to store 524288 elements
+2018-01-09 07:20:14 Using 4 threads for script verification
+2018-01-09 07:20:14 scheduler thread start
+2018-01-09 07:20:14 libevent: getaddrinfo: address family for nodename not supported
+2018-01-09 07:20:14 Binding RPC on address ::1 port 8344 failed.
+2018-01-09 07:20:14 HTTP: creating work queue of depth 16
+2018-01-09 07:20:14 Starting RPC
+2018-01-09 07:20:14 Starting HTTP RPC server
+2018-01-09 07:20:14 Config options rpcuser and rpcpassword will soon be deprecated. Locally-run instances may remove rpcuser to use cookie-based auth, or may be replaced with rpcauth. Please see share/rpcuser for rpcauth auth generation.
+2018-01-09 07:20:14 HTTP: starting 4 worker threads
+2018-01-09 07:20:14 init message: Verifying wallet(s)...
+2018-01-09 07:20:14 Using BerkeleyDB version Berkeley DB 4.8.30: (April  9, 2010)
+2018-01-09 07:20:14 Using wallet wallet.dat
+2018-01-09 07:20:14 CDBEnv::Open: LogDir=/root/btcs/v3/btcsv3/data/database ErrorFile=/root/btcs/v3/btcsv3/data/db.log
+2018-01-09 07:20:14 Cache configuration:
+2018-01-09 07:20:14 * Using 2.0MiB for block index database
+2018-01-09 07:20:14 * Using 8.0MiB for chain state database
+2018-01-09 07:20:14 * Using 440.0MiB for in-memory UTXO set (plus up to 286.1MiB of unused mempool space)
+2018-01-09 07:20:14 init message: Loading block index...
+2018-01-09 07:20:14 Opening LevelDB in /root/btcs/v3/btcsv3/data/blocks/index
+2018-01-09 07:20:14 Opened LevelDB successfully
+2018-01-09 07:20:14 Using obfuscation key for /root/btcs/v3/btcsv3/data/blocks/index: 0000000000000000
+2018-01-09 07:20:14 LoadBlockIndexDB: last block file = 0
+2018-01-09 07:20:14 LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=1, size=293, heights=0...0, time=2009-01-03...2009-01-03)
+2018-01-09 07:20:14 Checking all blk files are present...
+2018-01-09 07:20:14 LoadBlockIndexDB: transaction index disabled
+2018-01-09 07:20:14 Opening LevelDB in /root/btcs/v3/btcsv3/data/chainstate
+2018-01-09 07:20:14 Opened LevelDB successfully
+2018-01-09 07:20:14 Using obfuscation key for /root/btcs/v3/btcsv3/data/chainstate: 5a643c06445a1b41
+2018-01-09 07:20:14 Loaded best chain: hashBestChain=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 date=2009-01-03 18:15:05 progress=0.000000
+2018-01-09 07:20:14 init message: Rewinding blocks...
+2018-01-09 07:20:14 init message: Verifying blocks...
+2018-01-09 07:20:14  block index              22ms
+2018-01-09 07:20:14 init message: Loading wallet...
+2018-01-09 07:20:14 nFileVersion = 150001
+2018-01-09 07:20:14 Keys: 2002 plaintext, 0 encrypted, 2002 w/ metadata, 2002 total
+2018-01-09 07:20:14  wallet                   30ms
+2018-01-09 07:20:14 setKeyPool.size() = 2000
+2018-01-09 07:20:14 mapWallet.size() = 0
+2018-01-09 07:20:14 mapAddressBook.size() = 1
+2018-01-09 07:20:14 mapBlockIndex.size() = 1
+2018-01-09 07:20:14 nBestHeight = 0
+2018-01-09 07:20:14 Imported mempool transactions from disk: 0 successes, 0 failed, 0 expired
+2018-01-09 07:20:14 Bound to 0.0.0.0:8345
+2018-01-09 07:20:14 torcontrol thread start
+2018-01-09 07:20:14 init message: Loading P2P addresses...
+2018-01-09 07:20:14 Loaded 0 addresses from peers.dat  1ms
+2018-01-09 07:20:14 init message: Loading banlist...
+2018-01-09 07:20:14 init message: Starting network threads...
+2018-01-09 07:20:14 DNS seeding disabled
+2018-01-09 07:20:14 net thread start
+2018-01-09 07:20:14 init message: Done loading
+2018-01-09 07:20:14 msghand thread start
+2018-01-09 07:20:14 addcon thread start
+2018-01-09 07:20:14 opencon thread start
+2018-01-09 07:20:14 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:50456, peer=0
+2018-01-09 07:20:15 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=1
+2018-01-09 07:20:28 receive version message: /Satoshi:0.15.0.1/: version 70015, blocks=0, us=116.62.131.192:8345, peer=2
+2018-01-09 07:20:47 ThreadRPCServer method=getinfo
+2018-01-09 07:20:47 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:23:32 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:23:56 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:23:57 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:25:07 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:25:08 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=getinfo
+2018-01-09 07:25:09 request getdifficulty>>>>>>>>>>>>>>>>>>>>>>ThreadRPCServer method=stop
+2018-01-09 07:25:17 Interrupting HTTP RPC server
+2018-01-09 07:25:17 Interrupting RPC
+2018-01-09 07:25:17 tor: Thread interrupt
+2018-01-09 07:25:17 torcontrol thread exit
+2018-01-09 07:25:17 scheduler thread interrupt
+2018-01-09 07:25:17 addcon thread exit
+2018-01-09 07:25:17 opencon thread exit
+2018-01-09 07:25:17 Shutdown: In progress...
+2018-01-09 07:25:17 Stopping HTTP RPC server
+2018-01-09 07:25:17 Stopping RPC
+2018-01-09 07:25:17 RPC stopped.
+2018-01-09 07:25:17 msghand thread exit
+2018-01-09 07:25:17 net thread exit
+2018-01-09 07:25:17 Dumped mempool: 3e-06s to copy, 0.00181s to dump
+2018-01-09 07:25:17 Shutdown: done

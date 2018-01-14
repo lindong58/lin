@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /Users/petter/Documents/比特宝日志/btcs/btcsv3
