@@ -170,6 +170,13 @@ bool static IsValidSignatureEncoding(const std::vector<unsigned char> &sig) {
     return true;
 }
 
+uint32_t static GetHashType(const valtype &vchSig) {
+    if (vchSig.size() == 0)
+        return 0;
+    // check IsValidSignatureEncoding()'s comment for vchSig format
+    return vchSig.back();
+}
+
 bool static IsLowDERSignature(const valtype &vchSig, ScriptError* serror) {
     if (!IsValidSignatureEncoding(vchSig)) {
         return set_error(serror, SCRIPT_ERR_SIG_DER);
@@ -185,12 +192,15 @@ bool static IsDefinedHashtypeSignature(const valtype &vchSig) {
     if (vchSig.size() == 0) {
         return false;
     }
-    unsigned char nHashType = vchSig[vchSig.size() - 1] & (~(SIGHASH_ANYONECANPAY));
+    unsigned char nHashType = GetHashType(vchSig) & (~(SIGHASH_ANYONECANPAY | SIGHASH_FORKID));
     if (nHashType < SIGHASH_ALL || nHashType > SIGHASH_SINGLE)
         return false;
 
     return true;
 }
+
+
+
 
 bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned int flags, ScriptError* serror) {
     // Empty signature. Not strictly DER encoded, but allowed to provide a
@@ -203,14 +213,8 @@ bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned i
     } else if ((flags & SCRIPT_VERIFY_LOW_S) != 0 && !IsLowDERSignature(vchSig, serror)) {
         // serror is set
         return false;
-    } else if ((flags & SCRIPT_VERIFY_STRICTENC) != 0) {
-        if (!IsDefinedHashtypeSignature(vchSig))
-            return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
-
-        bool requiresForkId = !AllowsNonForkId(flags);
-        bool usesForkId = UsesForkId(vchSig);
-        if (requiresForkId && !usesForkId)
-            return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
+    } else if ((flags & SCRIPT_VERIFY_STRICTENC) != 0 && !IsDefinedHashtypeSignature(vchSig)) {
+        return set_error(serror, SCRIPT_ERR_SIG_HASHTYPE);
     }
     return true;
 }
@@ -1182,10 +1186,6 @@ PrecomputedTransactionData::PrecomputedTransactionData(const CTransaction& txTo)
 uint256 SignatureHash(const CScript& scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType, const CAmount& amount, SigVersion sigversion, const PrecomputedTransactionData* cache)
 {
     int nForkHashType = nHashType;
-    if (UsesForkId(nHashType))
-        nForkHashType |= forkid << 8;
-
-
     if (sigversion == SIGVERSION_WITNESS_V0) {
         uint256 hashPrevouts;
         uint256 hashSequence;
